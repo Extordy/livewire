@@ -9,7 +9,7 @@ class Post extends Model
 {
     use HasFactory;
     //campos permitidos en asignacion masiba 
-    protected $follable =[
+    protected $fillable =[
         'title',
         'body'
     ];

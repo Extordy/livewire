@@ -16,11 +16,13 @@
             <td>{{ $post->title }}</td>
             <td>{{ $post->body }}</td>
             <td>
-                <button class="btn btn-primary">
+                <!-- metodo editar dentro del boton tabajando con el id-->
+                <button wire:click="edit({{ $post->id }})" class="btn btn-primary">
                     Editar
                 </button>
             </td>
             <td>
+                <!--metodo eliminar dentro del boton recibiendo el id de la variable post -->
                 <button wire:click='destroy({{ $post->id }})' class="btn btn-danger">
                     Eliminar
                 </button>
